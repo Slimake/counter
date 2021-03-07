@@ -1,0 +1,88 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background-color: #34699a;
+}
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border: 1px solid #f0e2d0;
+	box-shadow: 0px 0px 0.625rem #000;
+	width: 40%;
+	padding: 3rem 0;
+	color: #141414;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 5rem;
+}
+
+.count {
+	font-size: 15rem;
+	font-weight: 600;
+}
+
+.btn > button {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0.3125rem;
+}
+
+@media (max-width: 75rem) {
+	.counter {
+		width: 60%;
+	}
+}
+
+@media (max-width: 50rem) {
+	.counter {
+		width: 80%;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	.count {
+		font-size: 10rem;
+		font-weight: 800;
+	}
+
+	.btn > button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.btn > button:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 20.625rem) {
+	h2 {
+		font-size: 2rem;
+	}
+
+	.count {
+		font-size: 8rem;
+		font-weight: 800;
+	}
+}
