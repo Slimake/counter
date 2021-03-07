@@ -4,14 +4,22 @@ const add = document.querySelector(".add");
 let counter = 0;
 
 function addCount() {
-	if (counter >= 0) {
-		count.textContent = ++counter;
+	count.textContent = ++counter;
+	if (counter === 0) {
+		count.style.color = "black";
+	}
+	if (counter > 0) {
+		count.style.color = "green";
 	}
 }
 
 function lowerCount() {
-	if (counter > 0) {
-		count.textContent = --counter;
+	count.textContent = --counter;
+	if (counter === 0) {
+		count.style.color = "black";
+	}
+	if (counter < 0) {
+		count.style.color = "red";
 	}
 }
 
